@@ -1,0 +1,61 @@
+/* FOOTER */
+#footer {
+	background-color: #333333;
+	background-image: url(/img/guide/smartphone/bg_footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#footer div.description {
+	padding: 50px 37px 50px;
+	/* background: transparent url(/img/guide/smartphone/logo_footer.svg) no-repeat center 50px;
+	background-size: auto 57px; */
+}
+#footer div.description p {text-align: center;
+	color: #ffffff;
+	font-size: 13px;
+/*	font-family: "Barrio";*/
+	padding-bottom: 15px;
+}
+	
+#footer div.info {padding: 0 37px 50px;}
+#footer div.info h2 {font-size: 17px; font-weight: 700; padding-bottom: 20px; text-align: center; color: #ffffff;}
+#footer div.info p {font-size: 15px; text-align: center; color: #ffffff;}
+
+#footer {
+	display: flex;
+	flex-direction: column;
+}
+
+#footer .logos {
+	pointer-events: none;
+	/* padding-top: 50px; */
+	padding-bottom: 40px;
+}
+#footer .logos .skillslogo {
+	margin-bottom: 20px;
+    height: 40px;
+    background: transparent url(/img/guide/smartphone/logo_footer.svg) no-repeat top left;
+    background-size: auto 100%;
+	background-position: center;
+
+}
+#footer .logos .medfinlogo1 {
+	margin-bottom: 20px;
+
+    height: 40px;
+    background: transparent url(/img/logo_EU.png) no-repeat top left;
+    background-size: auto 100%;
+	background-position: center;
+
+}
+#footer .logos .medfinlogo2 {
+	margin-bottom: 20px;
+
+    height: 40px;
+    background: transparent url(/img/logo_regionh.png) no-repeat top left;
+    background-size: auto 100%;
+	background-position: center;
+
+}

@@ -1,0 +1,1085 @@
+#content {position: relative;}
+
+#content .scene {position: relative;}
+#content .scene > h1 {display: none;}
+#content .scene > div > h2 {display: none;}
+
+#content .scene .clickable {cursor: pointer;}
+
+
+
+/* COOKIE GATE */
+
+#content .scene.cookiegate {text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#content .scene.cookiegate div.cookieinfo {opacity: 0; background: #004243; border-radius: 10px; width: 400px; margin: 0 auto; padding: 30px; text-align: left;}
+#content .scene.cookiegate div.cookieinfo h1 {font-size: 18px; padding: 0 0 20px; color: #ffffff;}	
+#content .scene.cookiegate div.cookieinfo p {padding: 0 0 20px; color: #ffffff;}	
+#content .scene.cookiegate div.cookieinfo p a {text-decoration: underline;}
+#content .scene.cookiegate div.cookieinfo ul.actions {padding-top: 20px;}
+#content .scene.cookiegate div.cookieinfo ul.actions li {padding: 0;}
+#content .scene.cookiegate li.accept a {opacity: 0.8; color: #ffffff; padding: 10px 30px; border-radius: 6px; font-weight: 600; background: #ff5200; text-transform: uppercase; font-size: 14px; line-height: 17px; text-decoration: none;}
+
+
+
+/* INTRO */
+
+#content .scene > div.intro {
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: cover;
+}
+#content .scene > div.intro h1 {display: none;}
+#content .scene > div.intro div.videoplayer {height: 100%;}
+#content .scene > div.intro div.videoplayer video {object-fit: cover; width: 100%; height: 100%; display: block;}
+
+
+/* STATEMENT */
+
+#content .scene > div.statement {
+	background-position: center center; background-repeat: repeat;
+	background-color: #70c0ab;
+	background-image: url("/img/guide/smartphone/skillsuniverset/bg.jpg");
+}
+#content .scene > div.statement h2 {
+	text-transform: uppercase;
+	padding: 70px 40px;
+	color: #dedc31;
+	display: block;
+	font-size: 44px;
+	line-height: 56px;
+}
+#content .scene > div.statement h2 br.desktop {
+	display: none;
+}
+
+#content .scene > div.statement h2 span.outline {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #dedc31;
+}
+
+
+
+/* ROLEMODELS */
+
+#content .scene > div.rolemodels {position: relative; padding: 110px 0 30px;
+	background-repeat: repeat-y; background-color: transparent;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels h2 {
+	z-index: 10; position: absolute; top: 40px; left: 0px; width: 100%;
+	text-align: center;
+	display: block;
+	font-size: 24px; text-transform: uppercase;
+	color: #273581;
+	line-height: 30px;
+	
+/*	font-family: "roc-grotesk";*/
+	font-family: "Barrio";
+}
+#content .scene > div.rolemodels h2 span {
+	font-size: 36px;
+}
+#content .scene > div.rolemodels h2 br {display: block;}
+#content .scene > div.rolemodels h2.offset {
+	top: 42px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.rolemodels ul.rolemodels {}
+#content .scene > div.rolemodels li.rolemodel {position: relative; display: block; padding: 35px;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: auto 100%, cover;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile {
+/*	position: absolute;*/
+	border-radius: 10px;
+	position: relative;
+	background-repeat: no-repeat; background-color: transparent;
+	background-size: cover;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0px 50px 65px -60px rgba(0,0,0,0.75);
+}
+/*#content .scene > div.rolemodels li.rolemodel div.quote p {position: absolute; text-indent: -9999px;
+	background-position: center top; background-repeat: no-repeat; background-color: transparent;
+	background-size: 105% auto;
+}
+*/
+#content .scene > div.rolemodels li.rolemodel div.profile h3 {z-index: 10; position: absolute; top: 32px; left: 85px;
+	font-family: "Barrio"; 
+	font-size: 18px; text-transform: uppercase;
+	color: #ffffff;
+/*	padding-right: 30px;*/
+	line-height: 20px;
+/*	text-indent: -9999px;*/
+/*	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 100% auto;
+*/	
+}
+#content .scene > div.rolemodels li.rolemodel div.profile h3.offset {top: 34px; left: 87px;
+	z-index: 9; 
+	-webkit-text-stroke: 1px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.image {
+	z-index: 6;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.frame {
+	z-index: 7;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 70px;
+	height: 70px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.shadow {
+	z-index: 5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20%;
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.videoplayer {
+	width: 100%; height: 100%;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.videoplayer video {
+	width: 100%; height: 100%; display: block;
+}
+
+
+/*#content .scene > div.rolemodels li.rolemodel div.play {position: absolute; width: 30%; padding-top: 30%; cursor: pointer;}
+#content .scene > div.rolemodels li.rolemodel div.play div.sequenceplayer {height: 100%;}
+#content .scene > div.rolemodels li.rolemodel div.play div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.rolemodels li.rolemodel div.play div.sequenceplayer ul.sequence li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 100% auto;
+}
+*/
+
+
+/* STORY */
+#content .scene > div.rolemodels li.rolemodel div.story {z-index: 20; position: fixed; top: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.9); display: none;}
+
+#content .scene > div.rolemodels li.rolemodel div.story > h3 {z-index: 5; padding: 43px 0 0 80px; position: relative; font-size: 19px; color: #ffffff;
+	font-family: "Barrio";
+}
+#content .scene > div.rolemodels li.rolemodel div.story > div.progress {
+	z-index: 6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #999999;
+}
+
+#content .scene > div.rolemodels li.rolemodel div.story > div.image {
+	z-index: 5;
+	position: absolute;
+	top: 30px;
+	left: 17px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters {
+	z-index: 7;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 7px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li {padding: 7px 3px 30px;
+	flex-grow: 1;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li div.bar {
+	position: relative;
+	display: block;
+	height: 5px;
+	background-color: #999999;
+	
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li div.progress_bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #ffffff;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li.played div.progress_bar {
+	width: 100% !important;
+}
+
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles {
+	z-index: 6;
+	position: absolute;
+	bottom: 17px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles li {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	padding: 0 7px;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles li div.image {
+	height: 100%;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles li div.frame {
+	z-index: 6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.mute {
+	z-index: 7;
+	position: absolute;
+	top: 30px;
+	right: 57px;
+	width: 40px;
+	height: 40px;
+	background-image: url("/img/guide/smartphone/rolemodels/ic_volume.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 26px;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.mute.selected {
+	background-image: url("/img/guide/smartphone/rolemodels/ic_volume_off.svg");
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.share {
+	z-index: 7;
+	position: absolute;
+	top: 30px;
+	right: 103px;
+	width: 40px;
+	height: 40px;
+	background-image: url("/img/guide/smartphone/rolemodels/ic_share.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.share div.copied {
+	z-index: 7;
+	position: absolute;
+	top: 50px;
+	right: -30px;
+	width: 200px;
+	height: 20px;
+	padding: 3px 0; text-align: center;
+	background-color: #333333; color: #ffffff;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.close {
+	z-index: 7;
+	position: absolute;
+	top: 30px;
+	right: 17px;
+	width: 40px;
+	height: 40px;
+	background-image: url("/img/guide/smartphone/rolemodels/ic_close.png");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 20px auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.videoplayer {
+	z-index: 4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.videoplayer a.dynlink {
+	position: absolute;
+	display: none;
+	padding: 6px 10px 6px 30px;
+	border-radius: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+
+
+	background-image: url(/img/guide/smartphone/rolemodels/ic_link.svg);
+	background-position: 8px center;
+	background-repeat: no-repeat;
+	background-size: auto 16px;
+
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.videoplayer video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+/*
+#content .scene > div.rolemodels li.rolemodel.louis div.profile {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 55%;
+	background-position: center top;
+}
+#content .scene > div.rolemodels li.rolemodel.louis div.quote p {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+}
+#content .scene > div.rolemodels li.rolemodel.louis div.quote h3 {
+	top: 55%;
+	right: 5%;
+	width: 30%;
+	height: 10%;
+}
+#content .scene > div.rolemodels li.rolemodel.louis div.play {
+	top: 65%;
+	right: 0%;
+}
+
+
+#content .scene > div.rolemodels li.rolemodel.karoline div.profile {
+	bottom: 0;
+	left: 0;
+	width: 80%;
+	height: 70%;
+	background-position: right top;
+}
+#content .scene > div.rolemodels li.rolemodel.karoline div.quote p {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#content .scene > div.rolemodels li.rolemodel.karoline div.quote h3 {
+	bottom: 0%;
+	right: 0;
+	width: 40%;
+	height: 25%;
+}
+#content .scene > div.rolemodels li.rolemodel.karoline div.play {
+	top: 35%;
+	left: 35%;
+}
+*/
+
+
+/* PODCASTS */
+
+#content .scene > div.podcasts {position: relative;
+	background-repeat: repeat; background-color: transparent; background-position: left top;
+}
+
+#content .scene > div.podcasts h2 {z-index: 10; display: block; position: absolute; top: 0; left: 0; width: 100%; padding-top: 40px;
+	text-align: center;
+	font-family: "Barrio";
+	font-size: 22px;
+	color: #273581;
+	line-height: 55px;
+}
+#content .scene > div.podcasts h2 span {
+	font-size: 80px;
+}
+#content .scene > div.podcasts h2.offset {
+	top: 2px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+
+#content .scene > div.podcasts div.intro {padding-bottom: 30px;}
+#content .scene > div.podcasts div.intro p {font-size: 14px;
+	background: transparent url("/img/guide/smartphone/skillsuniverset/gx_block.png") no-repeat center bottom;
+	font-weight: 600;
+	background-size: 105% auto;
+	padding: 55% 15% 17%;
+/*	padding: 10% 15%;*/
+	color: #273581;
+}
+#content .scene > div.podcasts div.intro div.desktop {display: none;}
+@media (max-width: 420px) {
+	#content .scene > div.podcasts div.intro p {padding-bottom: 14%; font-size: 13px;}
+}
+@media (max-width: 360px) {
+	#content .scene > div.podcasts div.intro p {padding-bottom: 12%; font-size: 12px;}
+}
+#content .scene > div.podcasts div.intro h3 {padding-top: 37px; font-size: 19px;
+	font-family: "Barrio";
+}
+/*#content .scene > div.podcasts div.intro ul.platforms {padding-top: 10px;}
+#content .scene > div.podcasts div.intro ul.platforms li {
+	display: inline-block;
+	width: 33%;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-size: 36px auto;
+	background-color: transparent;
+	background-position: left center;
+}
+#content .scene > div.podcasts div.intro ul.platforms li a {display: inline-block; width: 36px; height: 100%;
+	text-indent: -9999px;
+}
+
+#content .scene > div.podcasts div.intro ul.platforms li.apple a {
+	background-image: url("/img/guide/smartphone/podcasts/bn_apple.svg");
+}
+#content .scene > div.podcasts div.intro ul.platforms li.google a {
+	background-image: url("/img/guide/smartphone/podcasts/bn_google.svg");
+}
+#content .scene > div.podcasts div.intro ul.platforms li.spotify a {
+	background-image: url("/img/guide/smartphone/podcasts/bn_spotify.svg");
+}
+*/
+#content .scene > div.podcasts div.podcast.featured {position: relative; padding-top: calc(100% - 40px); margin: 0 20px;}
+#content .scene > div.podcasts div.podcast.featured h3 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding: 12% 25% 13% 20%;
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+	position: absolute;
+	width: 55%;
+	bottom: -10%;
+	left: 0;
+}
+@media (max-width: 430px) {
+/*	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 9% 26% 9% 24%;
+	}
+*/
+	#content .scene > div.podcasts div.podcast.featured h3 {
+		font-size: 12px;
+	}
+}
+#content .scene > div.podcasts div.podcast.featured div.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#content .scene > div.podcasts div.podcast.featured div.image div.videoplayer {width: 100%; height: 100%;}
+#content .scene > div.podcasts div.podcast.featured div.image div.videoplayer video {width: 100%; height: 100%; display: block; object-fit: cover;}
+
+#content .scene > div.podcasts div.podcast.featured div.image div.mute {
+	z-index: 7;
+	position: absolute;
+	top: 17px;
+	right: 17px;
+	width: 50px;
+	height: 50px;
+	background-image: url("/img/guide/smartphone/rolemodels/ic_volume.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#content .scene > div.podcasts div.podcast.featured div.image div.mute.selected {
+	background-image: url("/img/guide/smartphone/rolemodels/ic_volume_off.svg");
+}
+
+
+#content .scene > div.podcasts div.podcast ul.actions {position: absolute; right: 13%; bottom: 2%; width: 45px; height: 45px;}
+#content .scene > div.podcasts div.podcast ul.actions li {height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions li a {display: block; height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions div.sequenceplayer {height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions div.sequenceplayer ul.sequence li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: 100% auto;
+}
+
+#content .scene > div.podcasts ul.podcasts {
+	padding-top: 8%;
+	padding-bottom: 50px;
+	background-image: url("/img/guide/smartphone/podcasts/gx_shape_1.png"), url("/img/guide/smartphone/podcasts/gx_shape_2.png");
+	background-position: -10% 60%, 50% 80%;
+	background-repeat: no-repeat;
+	background-size: 60% auto, 60% auto;
+/*	background-color: #c9a9d2;*/
+}
+#content .scene > div.podcasts ul.podcasts > li {
+	position: relative;
+	padding: 10% 24% 9% 28%;
+	height: 75px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 90% auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#content .scene > div.podcasts ul.podcasts > li h3 {
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+}
+@media (max-width: 450px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 10% 23% 9% 30%;
+	}
+
+	#content .scene > div.podcasts ul.podcasts > li h3 {
+		font-size: 12px;
+	}
+}
+@media (max-width: 370px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 9% 26% 9% 24%;
+	}
+
+}
+
+#content .scene > div.podcasts ul.podcasts > li div.frame {
+	z-index: 6;
+	position: absolute;
+	left: 3%;
+	top: 17%;
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+#content .scene > div.podcasts ul.podcasts > li div.image {
+	z-index: 5;
+	position: absolute;
+	left: 4.5%;
+	top: 22%;
+	width: 85px;
+	height: 85px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	border-radius: 50%;
+}
+
+@media (max-width: 370px) {
+	#content .scene > div.podcasts ul.podcasts > li div.frame {
+		width: 65px;
+		height: 65px;
+	}
+	#content .scene > div.podcasts ul.podcasts > li div.image {
+		width: 57px;
+		height: 57px;
+	}
+}
+
+#content .scene > div.podcasts ul.podcasts > li:nth-child(3n+1) div.image {
+	transform: rotate(2deg);
+}
+#content .scene > div.podcasts ul.podcasts > li:nth-child(3n+2) div.image {
+	transform: rotate(-5deg);
+}
+
+#content .scene > div.podcasts ul.podcasts li ul.actions {
+	position: absolute;
+	right: 13%;
+	top: 50%;
+	margin-top: -22px;
+	width: 45px;
+	height: 45px;
+}
+#content .scene > div.podcasts ul.podcasts li ul.actions li {height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions li a {display: block; height: 100%;}
+
+#content .scene > div.podcasts ul.podcasts li ul.actions div.sequenceplayer {height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions div.sequenceplayer ul.sequence li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 100% auto;
+}
+#content .scene > div.podcasts .podcast div.platforms {
+	display: none;
+	z-index: 15;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url("/img/guide/smartphone/podcasts/bg_platforms.png");
+	background-color: rgba(255, 255, 255, 0.6);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+}
+#content .scene > div.podcasts .podcast div.platforms.open {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#content .scene > div.podcasts .podcast div.platforms h4 {font-size: 19px; color: #ffffff; padding: 0 20% 20px;	text-align: center;
+	font-family: "Barrio";
+}
+
+#content .scene > div.podcasts .podcast ul.platforms li {display: inline-block; width: 36px; height: 36px; margin: 0 15px; text-indent: -9999px;
+	background-repeat: no-repeat; background-color: transparent; background-position: left center;
+	background-size: 36px auto;
+}
+#content .scene > div.podcasts .podcast ul.platforms li a {display: block; height: 100%;}
+
+#content .scene > div.podcasts .podcast ul.platforms li.apple {
+	background-image: url("/img/guide/smartphone/podcasts/bn_apple_white.svg");
+}
+#content .scene > div.podcasts .podcast ul.platforms li.google {
+	display: none;
+	background-image: url("/img/guide/smartphone/podcasts/bn_google_white.svg");
+}
+#content .scene > div.podcasts .podcast ul.platforms li.spotify {
+	background-image: url("/img/guide/smartphone/podcasts/bn_spotify_white.svg");
+}
+
+
+
+#content .scene > div.podcasts {overflow: hidden;}
+#content .scene > div.podcasts div.expand {z-index: 10; position: absolute; bottom: 0; left: 0; height: 75px; width: 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: auto 75px;
+	background-position: center bottom;
+	background-image: linear-gradient(0deg, #222222 0%, transparent 100%);
+}
+#content .scene > div.podcasts div.expand .icon {width: 45px; height: 45px;
+	transition: all 0.4s ease-in-out;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: auto 100%;
+	background-position: center 0px;
+	background-image: url(/img/guide/smartphone/gx_expand.png);
+	transform: rotate(180deg);
+}
+
+#content .scene > div.podcasts.collapsed div.expand .icon {
+	transform: rotate(0deg);
+}
+
+
+
+/* EVENTS */
+
+#content .scene > div.events {position: relative; padding: 130px 25px 82px;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: cover;
+	overflow: hidden;
+	user-select: none;
+}
+
+#content .scene > div.events h2 {z-index: 10;
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50px;
+	left: 0px;
+	font-family: "Barrio"; font-size: 36px; text-transform: uppercase;
+	color: #273581;
+	padding-right: 30px;
+	line-height: 36px;
+}
+/*#content .scene > div.events h2 span {
+	font-size: 58px;
+	line-height: 38px;
+}
+*/#content .scene > div.events h2.offset {
+	top: 52px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+
+#content .scene > div.events ul.events {}
+#content .scene > div.events ul.events li.event {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	
+/*	position: relative;
+	background: transparent url("/img/guide/smartphone/events/gx_underline_1.png") no-repeat center bottom;
+	background-size: 80% auto;
+*/
+/*	transition: all 0.5s ease-in-out;*/
+
+	height: 100%;
+
+/*	display: flex;
+	flex-direction: column;
+	justify-content: bottom;
+*/
+	}
+
+#content .scene > div.events ul.events li.event > div.image {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: 100%;
+/*	margin-left: -5%;*/
+/*	margin-top: 20px;*/
+	border-radius: 20px;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px; overflow: hidden;
+	box-shadow: 0px 50px 65px -60px rgba(0,0,0,0.75);
+}
+#content .scene > div.events ul.events li.event > div.image div.coloroverlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 66, 67, 0.6);
+}
+#content .scene > div.events ul.events li.event div.details {
+	z-index: 6;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 30px 30px;
+/*	display: flex;
+	flex-direction: column;
+*//*	align-items: center;
+	  justify-content: center;
+*/  }
+
+#content .scene > div.events ul.events li.event h3 {
+/*	box-sizing: border-box;*/
+/*	align-self: flex-end;*/
+/*	display: flex;
+	flex-direction: column;
+	justify-content: center;
+*/
+	text-transform: uppercase;
+	font-family: "Barrio";
+/*	text-align: center;*/
+	color: #ffffff;
+	font-size: 34px;
+	line-height: 34px;
+	padding: 0 0 20px;
+}
+
+/*#content .scene > div.events ul.events li.event > div.frame {
+	position: absolute;
+	top: -5%;
+	left: -15%;
+	z-index: 10;
+	padding-top: 95%;
+	width: 95%;
+	margin-top: 20px;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+#content .scene > div.events ul.events li.event p {
+/*	font-family: "Barrio";*/
+	font-size: 14px;
+	padding: 0 0 20px;
+	color: #ffffff;
+	font-weight: 600;
+}
+#content .scene > div.events ul.events li.event dl.info dt {display: none;}
+
+#content .scene > div.events ul.events li.event dl.info.date {
+	z-index: 10;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd {
+	background-image: url(/img/guide/smartphone/podcasts/gx_frame.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	text-align: center;
+	font-family: "Barrio";
+	width: 76px;
+	height: 76px;
+	margin-left: -8px;
+	margin-top: -8px;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd.end {
+	display: none;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd span {
+	display: block;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd span.date {
+	padding-top: 20px;
+	font-size: 30px;
+	line-height: 23px;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd span.month {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+
+#content .scene > div.events ul.events li.event dl.info.time {
+	padding: 0 0 20px;
+}
+
+#content .scene > div.events ul.events li.event dl.info.time dd {
+	display: inline-block;
+	font-family: "Barrio";
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#content .scene > div.events ul.events li.event ul.actions {
+/*	position: relative;
+	z-index: 7;
+*/	
+/*	text-align: center;*/
+/*	padding: 0 40% 0 5%;*/
+	padding: 0;
+}
+#content .scene > div.events ul.events li.event ul.actions li {
+	font-family: "Barrio";
+	font-size: 26px;
+	display: inline-block;
+	vertical-align: top;
+	background: transparent url("/img/guide/smartphone/events/gx_underline.png") no-repeat center bottom;
+	background-size: 100% auto;
+/*	display: inline-block;*/
+	padding: 0 0 7px;
+	color: #ffffff;
+}
+
+#content .scene > div.events ul.events li.event dl.info dd.end span.date {display: none;}
+#content .scene > div.events ul.events li.event dl.info dd.end span.time:before {content: "-";}
+
+
+/*#content .scene > div.events ul.events li.event > p,
+#content .scene > div.events ul.events li.event > dl.info,
+#content .scene > div.events ul.events li.event > div.image,
+#content .scene > div.events ul.events li.event > div.frame,
+#content .scene > div.events ul.events li.event > ul.actions li.readmore {
+	display: none;
+	opacity: 0;
+}
+*/
+/*#content .scene > div.events ul.events li.event > div.frame div.sequenceplayer {height: 100%;}
+#content .scene > div.events ul.events li.event > div.frame div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.events ul.events li.event > div.frame div.sequenceplayer ul.sequence li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 100% auto;
+}
+*/
+
+
+
+/* SKILLSUNIVERSET */
+
+#content .scene > div.skillsuniverset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	padding-bottom: 50px;
+
+	background-position: center center; background-repeat: repeat; background-color: #70c0ab;
+/*	background-size: cover;*/
+}
+#content .scene > div.skillsuniverset h2 {
+	display: block;
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50px;
+	left: 0px;
+	font-family: "Barrio"; font-size: 24px; text-transform: uppercase;
+	color: #273581;
+	line-height: 36px;
+}
+#content .scene > div.skillsuniverset h2 span {
+	font-size: 36px;
+
+}
+/*#content .scene > div.events h2 span {
+	font-size: 58px;
+	line-height: 38px;
+}
+*/#content .scene > div.skillsuniverset h2.offset {
+	top: 52px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+
+#content .scene > div.skillsuniverset ul.actions > li {position: relative; display: block; padding: 65% 10% 15%; text-align: center;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer.room {z-index: 5; border-radius: 50%; overflow: hidden;
+	top: 3%;
+	left: 9%;
+	height: 92%;
+	width: 83%;
+}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer.room ul.sequence li {background-size: 100% auto;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer.frame {z-index: 6;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer {position: absolute; top: 0; left: 0; height: 100%; width: 100%;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer ul.sequence li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 104% auto;
+}
+
+#content .scene > div.skillsuniverset ul.actions > li a {z-index: 10; position: relative; color: #273581; font-size: 16px; display: inline-block;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+	font-family: "Barrio";
+	
+	background-position: center center; background-repeat: no-repeat; background-color: #c7a6cd;
+	background-size: contain;
+}
+#content .scene > div.skillsuniverset ul.actions > li a span {
+	z-index: -1;
+	position: absolute; top: 2px; left: 2px; color: red; padding: 15px 20px; display: block; white-space: nowrap; color: #dedc31;
+}
+#content .scene > div.skillsuniverset p {font-size: 14px; color: #273581; text-align: center;
+	padding: 45% 25% 13.5%; 
+	font-weight: 600;
+	background-position: center bottom; background-repeat: no-repeat; background-color: transparent;
+	background-size: 80% auto;
+}
+#content .scene > div.skillsuniverset div.desktop {display: none;}
+
+@media (max-width: 410px) {
+	#content .scene > div.skillsuniverset p {
+		font-size: 12px;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+@media (max-width: 350px) {
+	#content .scene > div.skillsuniverset p {
+		font-size: 12px;
+		padding-bottom: 11%;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+
+
+/* INSTAGRAM */
+
+#content .scene > div.instagram {padding: 140px 32px 32px; position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: cover;
+}
+
+#content .scene > div.instagram h2 {z-index: 10; position: absolute; top: 50px; left: 0px;
+	text-align: left;
+	width: 100%; text-align: center;
+	display: block;
+	font-size: 36px; text-transform: uppercase;
+	color: #273581;
+	line-height: 42px;
+	font-family: "Barrio"; 
+}
+#content .scene > div.instagram h2.offset {
+	top: 52px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+
+#content .scene > div.instagram li.post {width: calc(50% - 10px); margin: 5px; display: inline-block;}
+#content .scene > div.instagram li.post img {width: 100%;}
+#content .scene > div.instagram li.post a {display: block;}
+#content .scene > div.instagram li.post a span {display: none;}
+#content .scene > div.instagram ul.actions {text-align: center; list-style: none; padding: 22px 0 43px;}
+#content .scene > div.instagram ul.actions li {display: inline-block; 
+	width: 75px; height: 75px;
+	background: transparent url(/img/guide/smartphone/gx_footer_instagram.svg) no-repeat center center;
+	background-size: 100% 100%;
+	text-indent: -9999px;
+}
+#content .scene > div.instagram ul.actions li a {display: block; height: 75px;}

@@ -1,0 +1,1217 @@
+/*
+asset-builder @ 2023-11-08 08:14:13
+*/
+
+/*seg_desktop_guide_include.css*/
+
+/*s-fonts.css*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/montserrat-v15-latin-300.eot'); 
+  src: local(''),
+       url('fonts/montserrat-v15-latin-300.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/montserrat-v15-latin-300.woff2') format('woff2'), 
+       url('fonts/montserrat-v15-latin-300.woff') format('woff'), 
+       url('fonts/montserrat-v15-latin-300.ttf') format('truetype'), 
+       url('fonts/montserrat-v15-latin-300.svg#Montserrat') format('svg'); 
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/montserrat-v15-latin-regular.eot'); 
+  src: local(''),
+       url('fonts/montserrat-v15-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/montserrat-v15-latin-regular.woff2') format('woff2'), 
+       url('fonts/montserrat-v15-latin-regular.woff') format('woff'), 
+       url('fonts/montserrat-v15-latin-regular.ttf') format('truetype'), 
+       url('fonts/montserrat-v15-latin-regular.svg#Montserrat') format('svg'); 
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/montserrat-v15-latin-600.eot'); 
+  src: local(''),
+       url('fonts/montserrat-v15-latin-600.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/montserrat-v15-latin-600.woff2') format('woff2'), 
+       url('fonts/montserrat-v15-latin-600.woff') format('woff'), 
+       url('fonts/montserrat-v15-latin-600.ttf') format('truetype'), 
+       url('fonts/montserrat-v15-latin-600.svg#Montserrat') format('svg'); 
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/montserrat-v15-latin-regular.eot'); 
+  src: local(''),
+       url('fonts/montserrat-v15-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/montserrat-v15-latin-regular.woff2') format('woff2'), 
+       url('fonts/montserrat-v15-latin-regular.woff') format('woff'), 
+       url('fonts/montserrat-v15-latin-regular.ttf') format('truetype'), 
+       url('fonts/montserrat-v15-latin-regular.svg#Montserrat') format('svg'); 
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/montserrat-v15-latin-700.eot'); 
+  src: local(''),
+       url('fonts/montserrat-v15-latin-700.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/montserrat-v15-latin-700.woff2') format('woff2'), 
+       url('fonts/montserrat-v15-latin-700.woff') format('woff'), 
+       url('fonts/montserrat-v15-latin-700.ttf') format('truetype'), 
+       url('fonts/montserrat-v15-latin-700.svg#Montserrat') format('svg'); 
+}
+@font-face {
+  font-family: 'Barrio';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/barrio-v19-latin-regular.eot'); 
+  src: local(''),
+       url('fonts/barrio-v19-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/barrio-v19-latin-regular.woff2') format('woff2'), 
+       url('fonts/barrio-v19-latin-regular.woff') format('woff'), 
+       url('fonts/barrio-v19-latin-regular.ttf') format('truetype'), 
+       url('fonts/barrio-v19-latin-regular.svg#Barrio') format('svg'); 
+}
+
+
+/*s-page.css*/
+* {font-family: "Montserrat", Arial, sans-serif; color: #333333;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+html {}
+body {margin: 0; background-color: #ffffff;}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: 400;}
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px; color: #333333;}
+input, textarea {outline: none;}
+a, span {font-size: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit; text-transform: inherit;}
+em, strong {font-size: inherit; font-family: inherit; line-height: inherit; color: inherit; text-transform: inherit;}
+sup {line-height: 1em; font-family: inherit; color: inherit;}
+h1 {font-size: 36px; line-height: 1.05em;
+	font-weight: 700;
+}
+h2 {font-size: 30px; line-height: 1.1em;
+	font-weight: 700;
+}
+h3 {font-size: 22px; line-height: 1.1em;
+	font-weight: 700;
+}
+h4 {font-size: 17px; line-height: 1.2em; font-weight: bold;}
+h5 {font-size: 14px; line-height: 1.2em; font-weight: bold;}
+h6 {font-size: 14px; line-height: 1em; font-weight: normal; font-style: italic;}
+p {font-size: 14px; line-height: 1.38em; font-weight: 400;}
+ul,
+ol {font-size: 0;}
+li {font-size: 13px; line-height: 1.25em; font-weight: 400;}
+dl {font-size: 0;}
+dt,
+dd {display: inline-block; vertical-align: top; font-size: 13px; line-height: 1.25em;}
+#page {position: relative;}
+#page.loading {overflow: hidden;}
+#page > div.loading {z-index: 100; position: fixed; top: 0; left: 0; width: 100%;
+	background: #ffffff url("../img/guide/gx_loader.gif") no-repeat center center;
+}
+div.cookie_underlay {z-index: 101; position: fixed; top: 0; left: 0; width: 100%; height: 100%; opacity: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+div.cookie {z-index: 102; position: fixed; bottom: 0; left: 0; width: calc(100% - 70px); margin: 30px; opacity: 0; box-sizing: border-box; padding: 40px 0 20px; border-radius: 20px;
+	background-color: #ffffff;
+}
+div.cookie div.icon {
+	position: absolute; top: -25px; left: 50%; margin-left: -25px;
+	width: 50px; height: 50px;
+	background-image: url(../img/guide/smartphone/gx_cookies.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+div.cookie h3 {
+	font-family: "Barrio";
+	font-size: 28px;
+	transform: rotate(-12deg);
+	text-align: center;
+}
+div.cookie p {
+	font-weight: 600;
+	text-align: center;
+	padding: 30px 50px;
+}
+div.cookie ul.actions {padding: 0 20px;}
+div.cookie ul.actions li {
+	background-image: url(../img/guide/smartphone/bn_cookie_ok.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding: 15px 20px;
+	font-family: "Barrio";
+	font-size: 16px;
+	display: inline-block;
+}
+div.cookie ul.actions li.ok {
+	background-image: url(../img/guide/smartphone/bn_cookie_ok.svg);
+	float: right;
+	color: #ffffff;
+	cursor: pointer;
+}
+div.cookie ul.actions li.read_more {
+	background-image: url(../img/guide/smartphone/bn_cookie_more.svg);
+	color: #dedc00;
+}
+
+/*s-header.css*/
+#header {z-index: 10; position: fixed; top: 10px; left: -10px; width: 130px; height: 50px;
+	background-image: url("../img/guide/smartphone/logo.svg");
+	background-position: left center;
+	background-size: 100% auto;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	mix-blend-mode: exclusion;
+}
+
+/*s-footer.css*/
+#footer {
+	background-color: #333333;
+	background-image: url(../img/guide/smartphone/bg_footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#footer div.description {
+	padding: 50px 37px 50px;
+}
+#footer div.description p {text-align: center;
+	color: #ffffff;
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+#footer div.info {padding: 0 37px 50px;}
+#footer div.info h2 {font-size: 17px; font-weight: 700; padding-bottom: 20px; text-align: center; color: #ffffff;}
+#footer div.info p {font-size: 15px; text-align: center; color: #ffffff;}
+#footer {
+	display: flex;
+	flex-direction: column;
+}
+#footer .logos {
+	pointer-events: none;
+	padding-bottom: 40px;
+}
+#footer .logos .skillslogo {
+	margin-bottom: 20px;
+    height: 40px;
+    background: transparent url(../img/guide/smartphone/logo_footer.svg) no-repeat top left;
+    background-size: auto 100%;
+	background-position: center;
+}
+#footer .logos .medfinlogo1 {
+	margin-bottom: 20px;
+    height: 40px;
+    background: transparent url(../img/logo_EU.png) no-repeat top left;
+    background-size: auto 100%;
+	background-position: center;
+}
+#footer .logos .medfinlogo2 {
+	margin-bottom: 20px;
+    height: 40px;
+    background: transparent url(../img/logo_regionh.png) no-repeat top left;
+    background-size: auto 100%;
+	background-position: center;
+}
+
+/*s-content.css*/
+#content {position: relative;}
+#content .scene {position: relative;}
+#content .scene > h1 {display: none;}
+#content .scene > div > h2 {display: none;}
+#content .scene .clickable {cursor: pointer;}
+#content .scene.cookiegate {text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#content .scene.cookiegate div.cookieinfo {opacity: 0; background: #004243; border-radius: 10px; width: 400px; margin: 0 auto; padding: 30px; text-align: left;}
+#content .scene.cookiegate div.cookieinfo h1 {font-size: 18px; padding: 0 0 20px; color: #ffffff;}	
+#content .scene.cookiegate div.cookieinfo p {padding: 0 0 20px; color: #ffffff;}	
+#content .scene.cookiegate div.cookieinfo p a {text-decoration: underline;}
+#content .scene.cookiegate div.cookieinfo ul.actions {padding-top: 20px;}
+#content .scene.cookiegate div.cookieinfo ul.actions li {padding: 0;}
+#content .scene.cookiegate li.accept a {opacity: 0.8; color: #ffffff; padding: 10px 30px; border-radius: 6px; font-weight: 600; background: #ff5200; text-transform: uppercase; font-size: 14px; line-height: 17px; text-decoration: none;}
+#content .scene > div.intro {
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: cover;
+}
+#content .scene > div.intro h1 {display: none;}
+#content .scene > div.intro div.videoplayer {height: 100%;}
+#content .scene > div.intro div.videoplayer video {object-fit: cover; width: 100%; height: 100%; display: block;}
+#content .scene > div.statement {
+	background-position: center center; background-repeat: repeat;
+	background-color: #70c0ab;
+	background-image: url("../img/guide/smartphone/skillsuniverset/bg.jpg");
+}
+#content .scene > div.statement h2 {
+	text-transform: uppercase;
+	padding: 70px 40px;
+	color: #dedc31;
+	display: block;
+	font-size: 44px;
+	line-height: 56px;
+}
+#content .scene > div.statement h2 br.desktop {
+	display: none;
+}
+#content .scene > div.statement h2 span.outline {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #dedc31;
+}
+#content .scene > div.rolemodels {position: relative; padding: 110px 0 30px;
+	background-repeat: repeat-y; background-color: transparent;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels h2 {
+	z-index: 10; position: absolute; top: 40px; left: 0px; width: 100%;
+	text-align: center;
+	display: block;
+	font-size: 24px; text-transform: uppercase;
+	color: #273581;
+	line-height: 30px;
+	font-family: "Barrio";
+}
+#content .scene > div.rolemodels h2 span {
+	font-size: 36px;
+}
+#content .scene > div.rolemodels h2 br {display: block;}
+#content .scene > div.rolemodels h2.offset {
+	top: 42px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.rolemodels ul.rolemodels {}
+#content .scene > div.rolemodels li.rolemodel {position: relative; display: block; padding: 35px;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: auto 100%, cover;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile {
+	border-radius: 10px;
+	position: relative;
+	background-repeat: no-repeat; background-color: transparent;
+	background-size: cover;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0px 50px 65px -60px rgba(0,0,0,0.75);
+}
+#content .scene > div.rolemodels li.rolemodel div.profile h3 {z-index: 10; position: absolute; top: 32px; left: 85px;
+	font-family: "Barrio"; 
+	font-size: 18px; text-transform: uppercase;
+	color: #ffffff;
+	line-height: 20px;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile h3.offset {top: 34px; left: 87px;
+	z-index: 9; 
+	-webkit-text-stroke: 1px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.image {
+	z-index: 6;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.frame {
+	z-index: 7;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 70px;
+	height: 70px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.shadow {
+	z-index: 5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20%;
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.videoplayer {
+	width: 100%; height: 100%;
+}
+#content .scene > div.rolemodels li.rolemodel div.profile > div.videoplayer video {
+	width: 100%; height: 100%; display: block;
+}
+#content .scene > div.rolemodels li.rolemodel div.story {z-index: 20; position: fixed; top: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.9); display: none;}
+#content .scene > div.rolemodels li.rolemodel div.story > h3 {z-index: 5; padding: 43px 0 0 80px; position: relative; font-size: 19px; color: #ffffff;
+	font-family: "Barrio";
+}
+#content .scene > div.rolemodels li.rolemodel div.story > div.progress {
+	z-index: 6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #999999;
+}
+#content .scene > div.rolemodels li.rolemodel div.story > div.image {
+	z-index: 5;
+	position: absolute;
+	top: 30px;
+	left: 17px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters {
+	z-index: 7;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 7px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li {padding: 7px 3px 30px;
+	flex-grow: 1;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li div.bar {
+	position: relative;
+	display: block;
+	height: 5px;
+	background-color: #999999;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li div.progress_bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #ffffff;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.chapters li.played div.progress_bar {
+	width: 100% !important;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles {
+	z-index: 6;
+	position: absolute;
+	bottom: 17px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles li {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	padding: 0 7px;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles li div.image {
+	height: 100%;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story ul.profiles li div.frame {
+	z-index: 6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.mute {
+	z-index: 7;
+	position: absolute;
+	top: 30px;
+	right: 57px;
+	width: 40px;
+	height: 40px;
+	background-image: url("../img/guide/smartphone/rolemodels/ic_volume.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 26px;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.mute.selected {
+	background-image: url("../img/guide/smartphone/rolemodels/ic_volume_off.svg");
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.share {
+	z-index: 7;
+	position: absolute;
+	top: 30px;
+	right: 103px;
+	width: 40px;
+	height: 40px;
+	background-image: url("../img/guide/smartphone/rolemodels/ic_share.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.share div.copied {
+	z-index: 7;
+	position: absolute;
+	top: 50px;
+	right: -30px;
+	width: 200px;
+	height: 20px;
+	padding: 3px 0; text-align: center;
+	background-color: #333333; color: #ffffff;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.close {
+	z-index: 7;
+	position: absolute;
+	top: 30px;
+	right: 17px;
+	width: 40px;
+	height: 40px;
+	background-image: url("../img/guide/smartphone/rolemodels/ic_close.png");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 20px auto;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.videoplayer {
+	z-index: 4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.videoplayer a.dynlink {
+	position: absolute;
+	display: none;
+	padding: 6px 10px 6px 30px;
+	border-radius: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-image: url(../img/guide/smartphone/rolemodels/ic_link.svg);
+	background-position: 8px center;
+	background-repeat: no-repeat;
+	background-size: auto 16px;
+}
+#content .scene > div.rolemodels li.rolemodel div.story div.videoplayer video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+#content .scene > div.podcasts {position: relative;
+	background-repeat: repeat; background-color: transparent; background-position: left top;
+}
+#content .scene > div.podcasts h2 {z-index: 10; display: block; position: absolute; top: 0; left: 0; width: 100%; padding-top: 40px;
+	text-align: center;
+	font-family: "Barrio";
+	font-size: 22px;
+	color: #273581;
+	line-height: 55px;
+}
+#content .scene > div.podcasts h2 span {
+	font-size: 80px;
+}
+#content .scene > div.podcasts h2.offset {
+	top: 2px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.podcasts div.intro {padding-bottom: 30px;}
+#content .scene > div.podcasts div.intro p {font-size: 14px;
+	background: transparent url("../img/guide/smartphone/skillsuniverset/gx_block.png") no-repeat center bottom;
+	font-weight: 600;
+	background-size: 105% auto;
+	padding: 55% 15% 17%;
+	color: #273581;
+}
+#content .scene > div.podcasts div.intro div.desktop {display: none;}
+@media (max-width: 420px) {
+	#content .scene > div.podcasts div.intro p {padding-bottom: 14%; font-size: 13px;}
+}
+@media (max-width: 360px) {
+	#content .scene > div.podcasts div.intro p {padding-bottom: 12%; font-size: 12px;}
+}
+#content .scene > div.podcasts div.intro h3 {padding-top: 37px; font-size: 19px;
+	font-family: "Barrio";
+}
+#content .scene > div.podcasts div.podcast.featured {position: relative; padding-top: calc(100% - 40px); margin: 0 20px;}
+#content .scene > div.podcasts div.podcast.featured h3 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding: 12% 25% 13% 20%;
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+	position: absolute;
+	width: 55%;
+	bottom: -10%;
+	left: 0;
+}
+@media (max-width: 430px) {
+	#content .scene > div.podcasts div.podcast.featured h3 {
+		font-size: 12px;
+	}
+}
+#content .scene > div.podcasts div.podcast.featured div.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#content .scene > div.podcasts div.podcast.featured div.image div.videoplayer {width: 100%; height: 100%;}
+#content .scene > div.podcasts div.podcast.featured div.image div.videoplayer video {width: 100%; height: 100%; display: block; object-fit: cover;}
+#content .scene > div.podcasts div.podcast.featured div.image div.mute {
+	z-index: 7;
+	position: absolute;
+	top: 17px;
+	right: 17px;
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/guide/smartphone/rolemodels/ic_volume.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#content .scene > div.podcasts div.podcast.featured div.image div.mute.selected {
+	background-image: url("../img/guide/smartphone/rolemodels/ic_volume_off.svg");
+}
+#content .scene > div.podcasts div.podcast ul.actions {position: absolute; right: 13%; bottom: 2%; width: 45px; height: 45px;}
+#content .scene > div.podcasts div.podcast ul.actions li {height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions li a {display: block; height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions div.sequenceplayer {height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.podcasts div.podcast ul.actions div.sequenceplayer ul.sequence li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: 100% auto;
+}
+#content .scene > div.podcasts ul.podcasts {
+	padding-top: 8%;
+	padding-bottom: 50px;
+	background-image: url("../img/guide/smartphone/podcasts/gx_shape_1.png"), url("../img/guide/smartphone/podcasts/gx_shape_2.png");
+	background-position: -10% 60%, 50% 80%;
+	background-repeat: no-repeat;
+	background-size: 60% auto, 60% auto;
+}
+#content .scene > div.podcasts ul.podcasts > li {
+	position: relative;
+	padding: 10% 24% 9% 28%;
+	height: 75px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 90% auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#content .scene > div.podcasts ul.podcasts > li h3 {
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+}
+@media (max-width: 450px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 10% 23% 9% 30%;
+	}
+	#content .scene > div.podcasts ul.podcasts > li h3 {
+		font-size: 12px;
+	}
+}
+@media (max-width: 370px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 9% 26% 9% 24%;
+	}
+}
+#content .scene > div.podcasts ul.podcasts > li div.frame {
+	z-index: 6;
+	position: absolute;
+	left: 3%;
+	top: 17%;
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+#content .scene > div.podcasts ul.podcasts > li div.image {
+	z-index: 5;
+	position: absolute;
+	left: 4.5%;
+	top: 22%;
+	width: 85px;
+	height: 85px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	border-radius: 50%;
+}
+@media (max-width: 370px) {
+	#content .scene > div.podcasts ul.podcasts > li div.frame {
+		width: 65px;
+		height: 65px;
+	}
+	#content .scene > div.podcasts ul.podcasts > li div.image {
+		width: 57px;
+		height: 57px;
+	}
+}
+#content .scene > div.podcasts ul.podcasts > li:nth-child(3n+1) div.image {
+	transform: rotate(2deg);
+}
+#content .scene > div.podcasts ul.podcasts > li:nth-child(3n+2) div.image {
+	transform: rotate(-5deg);
+}
+#content .scene > div.podcasts ul.podcasts li ul.actions {
+	position: absolute;
+	right: 13%;
+	top: 50%;
+	margin-top: -22px;
+	width: 45px;
+	height: 45px;
+}
+#content .scene > div.podcasts ul.podcasts li ul.actions li {height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions li a {display: block; height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions div.sequenceplayer {height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.podcasts ul.podcasts li ul.actions div.sequenceplayer ul.sequence li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 100% auto;
+}
+#content .scene > div.podcasts .podcast div.platforms {
+	display: none;
+	z-index: 15;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url("../img/guide/smartphone/podcasts/bg_platforms.png");
+	background-color: rgba(255, 255, 255, 0.6);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+}
+#content .scene > div.podcasts .podcast div.platforms.open {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#content .scene > div.podcasts .podcast div.platforms h4 {font-size: 19px; color: #ffffff; padding: 0 20% 20px;	text-align: center;
+	font-family: "Barrio";
+}
+#content .scene > div.podcasts .podcast ul.platforms li {display: inline-block; width: 36px; height: 36px; margin: 0 15px; text-indent: -9999px;
+	background-repeat: no-repeat; background-color: transparent; background-position: left center;
+	background-size: 36px auto;
+}
+#content .scene > div.podcasts .podcast ul.platforms li a {display: block; height: 100%;}
+#content .scene > div.podcasts .podcast ul.platforms li.apple {
+	background-image: url("../img/guide/smartphone/podcasts/bn_apple_white.svg");
+}
+#content .scene > div.podcasts .podcast ul.platforms li.google {
+	display: none;
+	background-image: url("../img/guide/smartphone/podcasts/bn_google_white.svg");
+}
+#content .scene > div.podcasts .podcast ul.platforms li.spotify {
+	background-image: url("../img/guide/smartphone/podcasts/bn_spotify_white.svg");
+}
+#content .scene > div.podcasts {overflow: hidden;}
+#content .scene > div.podcasts div.expand {z-index: 10; position: absolute; bottom: 0; left: 0; height: 75px; width: 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: auto 75px;
+	background-position: center bottom;
+	background-image: linear-gradient(0deg, #222222 0%, transparent 100%);
+}
+#content .scene > div.podcasts div.expand .icon {width: 45px; height: 45px;
+	transition: all 0.4s ease-in-out;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: auto 100%;
+	background-position: center 0px;
+	background-image: url(../img/guide/smartphone/gx_expand.png);
+	transform: rotate(180deg);
+}
+#content .scene > div.podcasts.collapsed div.expand .icon {
+	transform: rotate(0deg);
+}
+#content .scene > div.events {position: relative; padding: 130px 25px 82px;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: cover;
+	overflow: hidden;
+	user-select: none;
+}
+#content .scene > div.events h2 {z-index: 10;
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50px;
+	left: 0px;
+	font-family: "Barrio"; font-size: 36px; text-transform: uppercase;
+	color: #273581;
+	padding-right: 30px;
+	line-height: 36px;
+}
+#content .scene > div.events h2.offset {
+	top: 52px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.events ul.events {}
+#content .scene > div.events ul.events li.event {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	height: 100%;
+	}
+#content .scene > div.events ul.events li.event > div.image {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: 100%;
+	border-radius: 20px;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px; overflow: hidden;
+	box-shadow: 0px 50px 65px -60px rgba(0,0,0,0.75);
+}
+#content .scene > div.events ul.events li.event > div.image div.coloroverlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 66, 67, 0.6);
+}
+#content .scene > div.events ul.events li.event div.details {
+	z-index: 6;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 30px 30px;
+/*	align-items: center;
+	  justify-content: center;
+*/  }
+#content .scene > div.events ul.events li.event h3 {
+	text-transform: uppercase;
+	font-family: "Barrio";
+	color: #ffffff;
+	font-size: 34px;
+	line-height: 34px;
+	padding: 0 0 20px;
+}
+#content .scene > div.events ul.events li.event p {
+	font-size: 14px;
+	padding: 0 0 20px;
+	color: #ffffff;
+	font-weight: 600;
+}
+#content .scene > div.events ul.events li.event dl.info dt {display: none;}
+#content .scene > div.events ul.events li.event dl.info.date {
+	z-index: 10;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd {
+	background-image: url(../img/guide/smartphone/podcasts/gx_frame.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	text-align: center;
+	font-family: "Barrio";
+	width: 76px;
+	height: 76px;
+	margin-left: -8px;
+	margin-top: -8px;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd.end {
+	display: none;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd span {
+	display: block;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd span.date {
+	padding-top: 20px;
+	font-size: 30px;
+	line-height: 23px;
+}
+#content .scene > div.events ul.events li.event dl.info.date dd span.month {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+#content .scene > div.events ul.events li.event dl.info.time {
+	padding: 0 0 20px;
+}
+#content .scene > div.events ul.events li.event dl.info.time dd {
+	display: inline-block;
+	font-family: "Barrio";
+	font-size: 18px;
+	color: #ffffff;
+}
+#content .scene > div.events ul.events li.event ul.actions {
+	padding: 0;
+}
+#content .scene > div.events ul.events li.event ul.actions li {
+	font-family: "Barrio";
+	font-size: 26px;
+	display: inline-block;
+	vertical-align: top;
+	background: transparent url("../img/guide/smartphone/events/gx_underline.png") no-repeat center bottom;
+	background-size: 100% auto;
+	padding: 0 0 7px;
+	color: #ffffff;
+}
+#content .scene > div.events ul.events li.event dl.info dd.end span.date {display: none;}
+#content .scene > div.events ul.events li.event dl.info dd.end span.time:before {content: "-";}
+#content .scene > div.skillsuniverset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	padding-bottom: 50px;
+	background-position: center center; background-repeat: repeat; background-color: #70c0ab;
+}
+#content .scene > div.skillsuniverset h2 {
+	display: block;
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50px;
+	left: 0px;
+	font-family: "Barrio"; font-size: 24px; text-transform: uppercase;
+	color: #273581;
+	line-height: 36px;
+}
+#content .scene > div.skillsuniverset h2 span {
+	font-size: 36px;
+}
+#content .scene > div.skillsuniverset h2.offset {
+	top: 52px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.skillsuniverset ul.actions > li {position: relative; display: block; padding: 65% 10% 15%; text-align: center;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer.room {z-index: 5; border-radius: 50%; overflow: hidden;
+	top: 3%;
+	left: 9%;
+	height: 92%;
+	width: 83%;
+}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer.room ul.sequence li {background-size: 100% auto;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer.frame {z-index: 6;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer {position: absolute; top: 0; left: 0; height: 100%; width: 100%;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer ul.sequence {height: 100%;}
+#content .scene > div.skillsuniverset ul.actions > li div.sequenceplayer ul.sequence li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-position: center center; background-repeat: no-repeat; background-color: transparent;
+	background-size: 104% auto;
+}
+#content .scene > div.skillsuniverset ul.actions > li a {z-index: 10; position: relative; color: #273581; font-size: 16px; display: inline-block;
+	padding: 15px 20px;
+	border-radius: 5px;
+	font-family: "Barrio";
+	background-position: center center; background-repeat: no-repeat; background-color: #c7a6cd;
+	background-size: contain;
+}
+#content .scene > div.skillsuniverset ul.actions > li a span {
+	z-index: -1;
+	position: absolute; top: 2px; left: 2px; color: red; padding: 15px 20px; display: block; white-space: nowrap; color: #dedc31;
+}
+#content .scene > div.skillsuniverset p {font-size: 14px; color: #273581; text-align: center;
+	padding: 45% 25% 13.5%; 
+	font-weight: 600;
+	background-position: center bottom; background-repeat: no-repeat; background-color: transparent;
+	background-size: 80% auto;
+}
+#content .scene > div.skillsuniverset div.desktop {display: none;}
+@media (max-width: 410px) {
+	#content .scene > div.skillsuniverset p {
+		font-size: 12px;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media (max-width: 350px) {
+	#content .scene > div.skillsuniverset p {
+		font-size: 12px;
+		padding-bottom: 11%;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+#content .scene > div.instagram {padding: 140px 32px 32px; position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: cover;
+}
+#content .scene > div.instagram h2 {z-index: 10; position: absolute; top: 50px; left: 0px;
+	text-align: left;
+	width: 100%; text-align: center;
+	display: block;
+	font-size: 36px; text-transform: uppercase;
+	color: #273581;
+	line-height: 42px;
+	font-family: "Barrio"; 
+}
+#content .scene > div.instagram h2.offset {
+	top: 52px; left: 2px;
+	z-index: 9; 
+	-webkit-text-stroke: 3px #dedc31;
+	-webkit-text-fill-color: transparent;
+}
+#content .scene > div.instagram li.post {width: calc(50% - 10px); margin: 5px; display: inline-block;}
+#content .scene > div.instagram li.post img {width: 100%;}
+#content .scene > div.instagram li.post a {display: block;}
+#content .scene > div.instagram li.post a span {display: none;}
+#content .scene > div.instagram ul.actions {text-align: center; list-style: none; padding: 22px 0 43px;}
+#content .scene > div.instagram ul.actions li {display: inline-block; 
+	width: 75px; height: 75px;
+	background: transparent url(../img/guide/smartphone/gx_footer_instagram.svg) no-repeat center center;
+	background-size: 100% 100%;
+	text-indent: -9999px;
+}
+#content .scene > div.instagram ul.actions li a {display: block; height: 75px;}
+
+
+
+/*s-overrides.css*/
+#header {z-index: 20; position: fixed; top: 0; left: 0; width: 100%; height: 80px; 
+	background-size: 170px auto;
+	background-image: url("../img/guide/smartphone/logo.svg");
+}
+#navigation {float: right; display: none;}
+#navigation ul.navigation {padding: 20px 30px;}
+#navigation ul.navigation li {display: inline-block; vertical-align: top; padding: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "Barrio";
+	text-transform: uppercase;
+	color: #666666;
+}
+div.cookie {width: 400px; left: 50%; margin-left: -200px;}
+body.rolemodels #navigation ul.navigation li.rolemodels,
+body.podcasts #navigation ul.navigation li.podcasts,
+body.events #navigation ul.navigation li.events,
+body.skillsuniverset #navigation ul.navigation li.skillsuniverset {color: #333333;}
+#content .scene div.statement {
+	padding: 100px;
+}
+#content .scene div.statement h2 {
+	display: none;
+}
+#content .scene div.statement img {
+	width: 80%;
+	max-width: 1100px;
+	pointer-events: none;
+}
+#content .scene div.statement h2 br {display: none;}
+#content .scene div.statement h2 br.desktop {display: inline;}
+#content .scene div.statement h2 span {display: inline-block; text-align: left; width: 60%; max-width: 550px; font-size: 100px; line-height: 1.33em;}
+#content .scene div.statement h2 span.outline {width: 40%;}
+@media (max-width: 1200px) {
+	#content .scene div.statement h2 span {max-width: 450px; font-size: 80px;}
+}	
+@media (max-width: 1000px) {
+	#content .scene div.statement h2 span {max-width: 350px; font-size: 60px;}
+}	
+@media (max-width: 800px) {
+	#content .scene div.statement h2 span {max-width: 300px; font-size: 40px;}
+}	
+#content .scene div.rolemodels {background-size: 600px auto; background-repeat: repeat; padding: 250px 0 70px;}
+#content .scene > div.rolemodels h2 {
+	font-size: 48px;
+	line-height: 54px;
+	top: 90px;
+}
+#content .scene > div.rolemodels h2.offset {
+	top: 92px;
+}
+#content .scene > div.rolemodels h2 span {
+	font-size: 76px;
+}
+#content .scene div.rolemodels ul.rolemodels {text-align: center;}
+#content .scene div.rolemodels ul.rolemodels > li {display: inline-block; vertical-align: top; width: 320px; height: 400px; padding: 35px 15px;}
+#content .scene > div.rolemodels li.rolemodel div.story > h3 {text-align: left;}
+#content .scene div.podcasts .c {font-size: 0; padding: 50px 70px 90px; max-width: 1200px; margin: 0 auto;}
+#content .scene div.podcasts .c1 {display: inline-block; vertical-align: top; width: 50%;  box-sizing: border-box; padding-right: 20px; position: relative;}
+#content .scene div.podcasts .c2 {display: inline-block; vertical-align: top; width: 50%; box-sizing: border-box; padding-left: 20px;
+	background-image: url("../img/guide/smartphone/podcasts/gx_shape_1.png"), url("../img/guide/smartphone/podcasts/gx_shape_2.png");
+	background-position: 2% 40%, 50% 80%;
+	background-repeat: no-repeat;
+	background-size: 40% auto, 40% auto;
+}
+#content .scene div.podcasts h2 {padding: 0; top: 20px; left: 0; padding: 0; width: calc(100% - 20px);}
+#content .scene div.podcasts h2.offset {top: 22px; left: 2px;}
+#content .scene > div.podcasts div.podcast.featured {padding: 40px 0 0;}
+#content .scene > div.podcasts div.podcast.featured div.image {padding-top: 100%; bottom: auto; top: auto; position: relative;}
+#content .scene > div.podcasts div.podcast.featured div.image div.videoplayer {position: absolute; top: 0; left: 0;}
+#content .scene > div.podcasts div.podcast.featured h3 {width: 100%; left: auto; bottom: auto; top: -80px; position: relative; box-sizing: border-box;}
+@media (max-width: 1000px) {
+	#content .scene > div.podcasts div.podcast.featured h3 {
+		font-size: 13px;
+	}
+}
+@media (max-width: 900px) {
+	#content .scene > div.podcasts div.podcast.featured h3 {
+		font-size: 12px;
+	}
+}
+#content .scene > div.podcasts div.podcast.featured ul.actions {bottom: auto; left: calc(100% - 80px); position: relative; margin-top: -180px}
+#content .scene > div.podcasts div.intro {margin: 200px auto 0; text-align: center; max-width: 400px;}
+#content .scene > div.podcasts div.intro p {padding: 30px 5% 30px; background-size: 115% auto; background-position: center center;
+	background: rgba(255, 255, 255, 0.2); border-radius: 5px;
+}
+#content .scene > div.podcasts div.intro div.desktop {display: block;}
+#content .scene > div.podcasts div.intro div.desktop p {padding-top: 0;}
+#content .scene > div.podcasts ul.podcasts {background: none; padding: 50px 0 0; width: 100%; margin: 0 auto;}
+#content .scene > div.podcasts ul.podcasts li ul.actions {right: 10%;}
+@media (max-width: 1000px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 10% 24% 9% 30%;
+	}
+	#content .scene > div.podcasts ul.podcasts > li h3 {
+		font-size: 13px;
+	}
+}
+@media (max-width: 900px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 10% 24% 9% 34%;
+	}
+	#content .scene > div.podcasts ul.podcasts > li h3 {
+		font-size: 12px;
+	}
+}
+#content .scene > div.events {background-size: 600px auto; background-repeat: repeat; padding: 220px 25px 50px;}
+#content .scene > div.events h2 {
+	top: 90px;
+	font-size: 76px;
+}
+#content .scene > div.events h2.offset {
+	top: 93px;
+}
+#content .scene > div.events ul.events {text-align: center;}
+#content .scene > div.events ul.events li.event {height: 400px; width: 320px; margin: 0 5px 60px;}
+#content .scene > div.events ul.events li.event h3,
+#content .scene > div.events ul.events li.event p,
+#content .scene > div.events ul.events li.event dl,
+#content .scene > div.events ul.events li.event ul {text-align: left;}
+#content .scene div.skillsuniverset {padding: 30px 30px;}
+#content .scene div.skillsuniverset .c {font-size: 0; padding: 20px 0; max-width: 1200px; margin: 0 auto; width: 100%; box-sizing: border-box;}
+#content .scene div.skillsuniverset .c1 {display: inline-block; vertical-align: top; width: 50%; position: relative;}
+#content .scene div.skillsuniverset .c2 {display: inline-block; vertical-align: top; width: 50%; position: relative;}
+#content .scene > div.skillsuniverset h2 {
+	line-height: 42px;
+	top: 50px;
+	font-size: 34px;
+}
+#content .scene > div.skillsuniverset h2 span {
+	font-size: 54px;
+}
+#content .scene div.skillsuniverset p {padding: 30px; width: 250px; margin: 170px auto 0; background: rgba(255, 255, 255, 0.2); border-radius: 5px;}
+#content .scene div.skillsuniverset p + p {margin: 0 auto; padding-top: 0;}
+#content .scene > div.skillsuniverset div.smartphone {display: none;}
+#content .scene > div.skillsuniverset div.desktop {display: block;}
+#content .scene > div.skillsuniverset ul.actions > li a {
+	font-size: 22px;
+	padding: 15px 20px;
+}
+#content .scene div.instagram {background-repeat: repeat-x; background-size: auto 100%; padding: 70px 30px;}
+#content .scene div.instagram .c {font-size: 0; padding: 20px 70px;}
+#content .scene div.instagram .c1 {display: inline-block; vertical-align: top; width: 50%; position: relative;}
+#content .scene div.instagram .c2 {display: inline-block; vertical-align: top; width: 50%;}
+#content .scene div.instagram h2 {font-size: 60px; text-align: center; left: 0; top: 50%; margin-top: -50px; width: 100%; text-align: center;}
+#content .scene div.instagram h2.offset {left: 2px; top: 50%; margin-top: -47px;}
+#content .scene div.instagram h2 br {display: none;}
+#content .scene div.instagram ul.actions {padding-top: 50%;}
+#content .scene div.instagram ul.instagram {}
+#content .scene > div.instagram ul.actions li {
+	background: transparent url("../img/guide/desktop/gx_footer_instagram.png") no-repeat center center;
+	background-size: 100% auto;
+}
+#footer {
+	height:300px;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 50px;
+	padding-top: 80px;
+	align-items: flex-start;
+}
+#footer div.description {
+	order: 1;
+	width:40%;
+	padding: 0;
+}
+#footer .servicenavigation {
+	display: none;
+}
+#footer div.info {display: inline-block; vertical-align: top; box-sizing: border-box; order:2;}
+#footer .logos {
+	width: 300px;
+	order: 0;
+}

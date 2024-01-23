@@ -1,0 +1,106 @@
+* {font-family: "Montserrat", Arial, sans-serif; color: #333333;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {}
+body {margin: 0; background-color: #ffffff;}
+
+
+/* BASE */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: 400;}
+
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px; color: #333333;}
+input, textarea {outline: none;}
+
+
+a, span {font-size: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit; text-transform: inherit;}
+em, strong {font-size: inherit; font-family: inherit; line-height: inherit; color: inherit; text-transform: inherit;}
+sup {line-height: 1em; font-family: inherit; color: inherit;}
+
+h1 {font-size: 36px; line-height: 1.05em;
+	font-weight: 700;
+}
+h2 {font-size: 30px; line-height: 1.1em;
+	font-weight: 700;
+}
+h3 {font-size: 22px; line-height: 1.1em;
+	font-weight: 700;
+}
+h4 {font-size: 17px; line-height: 1.2em; font-weight: bold;}
+h5 {font-size: 14px; line-height: 1.2em; font-weight: bold;}
+h6 {font-size: 14px; line-height: 1em; font-weight: normal; font-style: italic;}
+
+p {font-size: 14px; line-height: 1.38em; font-weight: 400;}
+
+
+ul,
+ol {font-size: 0;}
+li {font-size: 13px; line-height: 1.25em; font-weight: 400;}
+
+dl {font-size: 0;}
+dt,
+dd {display: inline-block; vertical-align: top; font-size: 13px; line-height: 1.25em;}
+
+
+
+#page {position: relative;}
+#page.loading {overflow: hidden;}
+#page > div.loading {z-index: 100; position: fixed; top: 0; left: 0; width: 100%;
+	background: #ffffff url("/img/guide/gx_loader.gif") no-repeat center center;
+}
+
+
+div.cookie_underlay {z-index: 101; position: fixed; top: 0; left: 0; width: 100%; height: 100%; opacity: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+div.cookie {z-index: 102; position: fixed; bottom: 0; left: 0; width: calc(100% - 70px); margin: 30px; opacity: 0; box-sizing: border-box; padding: 40px 0 20px; border-radius: 20px;
+	background-color: #ffffff;
+}
+div.cookie div.icon {
+	position: absolute; top: -25px; left: 50%; margin-left: -25px;
+	width: 50px; height: 50px;
+	background-image: url(/img/guide/smartphone/gx_cookies.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+div.cookie h3 {
+	font-family: "Barrio";
+	font-size: 28px;
+	transform: rotate(-12deg);
+	text-align: center;
+}
+div.cookie p {
+	font-weight: 600;
+	text-align: center;
+	padding: 30px 50px;
+}
+div.cookie ul.actions {padding: 0 20px;}
+div.cookie ul.actions li {
+	background-image: url(/img/guide/smartphone/bn_cookie_ok.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding: 15px 20px;
+	font-family: "Barrio";
+	font-size: 16px;
+	display: inline-block;
+}
+div.cookie ul.actions li.ok {
+	background-image: url(/img/guide/smartphone/bn_cookie_ok.svg);
+	float: right;
+	color: #ffffff;
+	cursor: pointer;
+}
+div.cookie ul.actions li.read_more {
+	background-image: url(/img/guide/smartphone/bn_cookie_more.svg);
+	color: #dedc00;
+}

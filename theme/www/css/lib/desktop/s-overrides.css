@@ -1,0 +1,207 @@
+#header {z-index: 20; position: fixed; top: 0; left: 0; width: 100%; height: 80px; 
+/*	background-color: rgba(255, 255, 255, 0.6);*/
+	background-size: 170px auto;
+	background-image: url("/img/guide/smartphone/logo.svg");
+/*	mix-blend-mode: unset;*/
+}
+#navigation {float: right; display: none;}
+#navigation ul.navigation {padding: 20px 30px;}
+#navigation ul.navigation li {display: inline-block; vertical-align: top; padding: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "Barrio";
+	text-transform: uppercase;
+	color: #666666;
+}
+
+div.cookie {width: 400px; left: 50%; margin-left: -200px;}
+
+body.rolemodels #navigation ul.navigation li.rolemodels,
+body.podcasts #navigation ul.navigation li.podcasts,
+body.events #navigation ul.navigation li.events,
+body.skillsuniverset #navigation ul.navigation li.skillsuniverset {color: #333333;}
+
+#content .scene div.statement {
+	padding: 100px;
+}
+
+#content .scene div.statement h2 {
+	display: none;
+}
+#content .scene div.statement img {
+	width: 80%;
+	max-width: 1100px;
+	pointer-events: none;
+}
+#content .scene div.statement h2 br {display: none;}
+#content .scene div.statement h2 br.desktop {display: inline;}
+#content .scene div.statement h2 span {display: inline-block; text-align: left; width: 60%; max-width: 550px; font-size: 100px; line-height: 1.33em;}
+#content .scene div.statement h2 span.outline {width: 40%;}
+
+@media (max-width: 1200px) {
+	#content .scene div.statement h2 span {max-width: 450px; font-size: 80px;}
+}	
+@media (max-width: 1000px) {
+	#content .scene div.statement h2 span {max-width: 350px; font-size: 60px;}
+}	
+@media (max-width: 800px) {
+	#content .scene div.statement h2 span {max-width: 300px; font-size: 40px;}
+}	
+
+
+#content .scene div.rolemodels {background-size: 600px auto; background-repeat: repeat; padding: 250px 0 70px;}
+#content .scene > div.rolemodels h2 {
+	font-size: 48px;
+	line-height: 54px;
+	top: 90px;
+}
+#content .scene > div.rolemodels h2.offset {
+	top: 92px;
+}
+
+#content .scene > div.rolemodels h2 span {
+	font-size: 76px;
+}
+
+#content .scene div.rolemodels ul.rolemodels {text-align: center;}
+#content .scene div.rolemodels ul.rolemodels > li {display: inline-block; vertical-align: top; width: 320px; height: 400px; padding: 35px 15px;}
+#content .scene > div.rolemodels li.rolemodel div.story > h3 {text-align: left;}
+
+#content .scene div.podcasts .c {font-size: 0; padding: 50px 70px 90px; max-width: 1200px; margin: 0 auto;}
+#content .scene div.podcasts .c1 {display: inline-block; vertical-align: top; width: 50%;  box-sizing: border-box; padding-right: 20px; position: relative;}
+#content .scene div.podcasts .c2 {display: inline-block; vertical-align: top; width: 50%; box-sizing: border-box; padding-left: 20px;
+	background-image: url("/img/guide/smartphone/podcasts/gx_shape_1.png"), url("/img/guide/smartphone/podcasts/gx_shape_2.png");
+	background-position: 2% 40%, 50% 80%;
+	background-repeat: no-repeat;
+	background-size: 40% auto, 40% auto;
+}
+#content .scene div.podcasts h2 {padding: 0; top: 20px; left: 0; padding: 0; width: calc(100% - 20px);}
+#content .scene div.podcasts h2.offset {top: 22px; left: 2px;}
+
+
+#content .scene > div.podcasts div.podcast.featured {padding: 40px 0 0;}
+#content .scene > div.podcasts div.podcast.featured div.image {padding-top: 100%; bottom: auto; top: auto; position: relative;}
+#content .scene > div.podcasts div.podcast.featured div.image div.videoplayer {position: absolute; top: 0; left: 0;}
+#content .scene > div.podcasts div.podcast.featured h3 {width: 100%; left: auto; bottom: auto; top: -80px; position: relative; box-sizing: border-box;}
+@media (max-width: 1000px) {
+/*	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 9% 26% 9% 24%;
+	}
+*/
+	#content .scene > div.podcasts div.podcast.featured h3 {
+		font-size: 13px;
+	}
+}
+@media (max-width: 900px) {
+	#content .scene > div.podcasts div.podcast.featured h3 {
+		font-size: 12px;
+	}
+}
+
+#content .scene > div.podcasts div.podcast.featured ul.actions {bottom: auto; left: calc(100% - 80px); position: relative; margin-top: -180px}
+#content .scene > div.podcasts div.intro {margin: 200px auto 0; text-align: center; max-width: 400px;}
+#content .scene > div.podcasts div.intro p {padding: 30px 5% 30px; background-size: 115% auto; background-position: center center;
+	background: rgba(255, 255, 255, 0.2); border-radius: 5px;
+}
+#content .scene > div.podcasts div.intro div.desktop {display: block;}
+#content .scene > div.podcasts div.intro div.desktop p {padding-top: 0;}
+
+#content .scene > div.podcasts ul.podcasts {background: none; padding: 50px 0 0; width: 100%; margin: 0 auto;}
+#content .scene > div.podcasts ul.podcasts li ul.actions {right: 10%;}
+@media (max-width: 1000px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 10% 24% 9% 30%;
+	}
+	#content .scene > div.podcasts ul.podcasts > li h3 {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 900px) {
+	#content .scene > div.podcasts ul.podcasts > li {
+		padding: 10% 24% 9% 34%;
+	}
+	#content .scene > div.podcasts ul.podcasts > li h3 {
+		font-size: 12px;
+	}
+}
+
+
+
+#content .scene > div.events {background-size: 600px auto; background-repeat: repeat; padding: 220px 25px 50px;}
+#content .scene > div.events h2 {
+	top: 90px;
+	font-size: 76px;
+}
+#content .scene > div.events h2.offset {
+	top: 93px;
+}
+#content .scene > div.events ul.events {text-align: center;}
+#content .scene > div.events ul.events li.event {height: 400px; width: 320px; margin: 0 5px 60px;}
+#content .scene > div.events ul.events li.event h3,
+#content .scene > div.events ul.events li.event p,
+#content .scene > div.events ul.events li.event dl,
+#content .scene > div.events ul.events li.event ul {text-align: left;}
+
+#content .scene div.skillsuniverset {padding: 30px 30px;}
+
+#content .scene div.skillsuniverset .c {font-size: 0; padding: 20px 0; max-width: 1200px; margin: 0 auto; width: 100%; box-sizing: border-box;}
+#content .scene div.skillsuniverset .c1 {display: inline-block; vertical-align: top; width: 50%; position: relative;}
+#content .scene div.skillsuniverset .c2 {display: inline-block; vertical-align: top; width: 50%; position: relative;}
+#content .scene > div.skillsuniverset h2 {
+	line-height: 42px;
+	top: 50px;
+	font-size: 34px;
+}
+#content .scene > div.skillsuniverset h2 span {
+	font-size: 54px;
+}
+#content .scene div.skillsuniverset p {padding: 30px; width: 250px; margin: 170px auto 0; background: rgba(255, 255, 255, 0.2); border-radius: 5px;}
+#content .scene div.skillsuniverset p + p {margin: 0 auto; padding-top: 0;}
+#content .scene > div.skillsuniverset div.smartphone {display: none;}
+#content .scene > div.skillsuniverset div.desktop {display: block;}
+
+#content .scene > div.skillsuniverset ul.actions > li a {
+	font-size: 22px;
+	padding: 15px 20px;
+}
+
+#content .scene div.instagram {background-repeat: repeat-x; background-size: auto 100%; padding: 70px 30px;}
+#content .scene div.instagram .c {font-size: 0; padding: 20px 70px;}
+#content .scene div.instagram .c1 {display: inline-block; vertical-align: top; width: 50%; position: relative;}
+#content .scene div.instagram .c2 {display: inline-block; vertical-align: top; width: 50%;}
+#content .scene div.instagram h2 {font-size: 60px; text-align: center; left: 0; top: 50%; margin-top: -50px; width: 100%; text-align: center;}
+#content .scene div.instagram h2.offset {left: 2px; top: 50%; margin-top: -47px;}
+#content .scene div.instagram h2 br {display: none;}
+#content .scene div.instagram ul.actions {padding-top: 50%;}
+#content .scene div.instagram ul.instagram {}
+#content .scene > div.instagram ul.actions li {
+	background: transparent url("/img/guide/desktop/gx_footer_instagram.png") no-repeat center center;
+	background-size: 100% auto;
+}
+
+#footer {
+	height:300px;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 50px;
+	padding-top: 80px;
+	align-items: flex-start;
+}
+
+#footer div.description {
+	order: 1;
+	width:40%;
+	padding: 0;
+}
+
+#footer .servicenavigation {
+	display: none;
+}
+
+#footer div.info {display: inline-block; vertical-align: top; box-sizing: border-box; order:2;}
+
+#footer .logos {
+	width: 300px;
+	order: 0;
+}
